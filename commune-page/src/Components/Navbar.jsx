@@ -1,38 +1,31 @@
 import React from 'react'
-import { Link } from "react-router-dom"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars } from '@fortawesome/free-solid-svg-icons'
-import Logo from '../assets/Logo.svg'
-import NavLinks from './NavLinks'
-const Navbar = () => {
+
+import logo from  '../Assets/Group5.png'
 
 
-
-
-
-  return (
-    <nav className='bg-slate-100 flex rounded-lg p-7 justify-between items-center'>
-        <div className=''>
-        
-       <img src= {Logo}/>
-        </div>
-
-        <ul className='flex mx-4'>
-           
-           <NavLinks/>
-        </ul>
-{/*     
-
-            
-        <div>
-        <FontAwesomeIcon icon={faBars}  size="lg" id='dropdownDafaultButton' data-dropdown-toggle = "dropdown"/>
-
-        
-        </div> */}
-        
+function NavBar() {
+  return (  
+    <div  className='  font-poppins '>
       
-    </nav>
+        <nav className="flex justify-between items-center">
+            <div className="h-10 w-24">
+              <img src={logo}/>
+               
+            </div>
+
+            <div className="flex list-none text-base items-center">
+                <li className='mr-4'>Home</li>
+                <li className='mr-4'>Products</li>
+                <li className='mr-4'>Gallery</li>
+                <li className='mr-4'>Contact</li>
+             
+            </div>
+
+           
+        </nav>
+      
+    </div>
   )
 }
 
-export default Navbar
+export default NavBar
